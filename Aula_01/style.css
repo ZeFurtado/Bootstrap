@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+}
+
+nav {
+    width: 100%;
+    min-height: 60px;
+    background: grey;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+.row{
+    width: 100%;
+}
+
+.row .msg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height:380px;
+    background: whitesmoke;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.row .msg .conteiner h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #773a8b;
+}
+
+.row .msg .conteiner p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.row .conteiner .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    column-gap: 50px;
+    width: 100%;
+    min-height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.row .conteiner .grid .column{
+    width: 100%;
+    height: 100%;
+}
+
+.row .conteiner .grid .column h2{
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.row .conteiner .grid .column p{
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.row .conteiner .grid .column .btn-view{
+    min-width: 120px;
+    padding: 16px;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    background: #387bff;
+    cursor: pointer;
+}
+
+.row .conteiner .grid .column .btn-view:hover{
+    background: #758bb8;
+}
+
+.rodape {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background: grey;;
+}
+
+.rodape .conteiner p{
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.conteiner{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 768px){
+    .row .msg .conteiner h1{
+        font-size: 2.4rem;
+        margin-bottom: 10px;
+        color: #212529;
+    }
+
+    .row .conteiner .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 50px;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
