@@ -1,1 +1,1 @@
-Estudo do framework Front-End feito através do curso da DevSamurai.
+Estudo do framework front-end feito através do curso da DevSamurai.
